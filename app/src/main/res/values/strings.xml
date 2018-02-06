@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">EveryoneDJ</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_server">ServerActivity</string>
+    <string name="title_activity_client">ClientActivity</string>
+    <string name="title_activity_song_sending">SongSendingActivity</string>
+    <string name="title_activity_server_playlist_songs">ServerPlaylistSongs</string>
+    <string name="title_activity_client_song_playlist">ClientSongPlaylist</string>
+    <string name="title_activity_add_songs">AddSongsActivity</string>
+    <string name="action_add">Add songs your playlist</string>
+    <string name="title_activity_connected_clients">ConnectedClientsActivity</string>
+</resources>

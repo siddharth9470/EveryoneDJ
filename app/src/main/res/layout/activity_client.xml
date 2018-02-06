@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.everyonedj.client.ClientActivity"
+                android:background="#0d0d0d">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/enter_name_screen2"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/app_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your name"
+            android:fontFamily="sans-serif-thin"
+            android:singleLine="true"
+            android:textColorHint="#ccc"
+            android:gravity="center_horizontal"
+            android:textColor="#fff"
+            android:id="@+id/userName"
+            android:textStyle="italic"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/submitButton"
+            android:layout_gravity="center_horizontal"
+            android:background="#CCFC913A"
+            android:layout_marginTop="10dp"
+            android:textColor="#1d1d1d"/>
+    </LinearLayout>
+</RelativeLayout>

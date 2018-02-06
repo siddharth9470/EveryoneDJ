@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.everyonedj.server.ConnectedClientsActivity"
+                android:background="#1d1d1d">
+
+    <include layout="@layout/toolbar" android:id="@id/app_bar"></include>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar"
+        android:id="@+id/allClients"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"/>
+
+    <com.everyonedj.common.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="No clients connected"
+        android:id="@+id/noClientsConnected"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-thin"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

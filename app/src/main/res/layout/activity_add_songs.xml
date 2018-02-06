@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.everyonedj.server.AddSongsActivity">
+
+    <include android:id="@+id/app_bar" layout="@layout/toolbar"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/app_bar"
+        android:layout_height="match_parent"
+        android:background="#1d1d1d"
+        android:layout_above="@+id/searchSongs"
+        android:id="@+id/allSongs"></ListView>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:id="@+id/searchSongs"
+       android:orientation="horizontal"
+       android:layout_alignParentBottom="true"
+       android:background="#010B12"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true"
+       android:gravity="bottom">
+
+       <EditText
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/search_Text"
+           android:layout_weight="1"
+           android:hint="Search your song"
+           android:fontFamily="sans-serif-thin"
+           android:textStyle="italic"
+           android:layout_marginLeft="10dp"
+           android:singleLine="true"
+           android:textColor="#FFFFFF"
+           android:textColorHint="#FFFFFF"/>
+
+       <ImageView
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:id="@+id/search_Button"
+           android:src="@android:drawable/ic_menu_search"
+           />
+
+   </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

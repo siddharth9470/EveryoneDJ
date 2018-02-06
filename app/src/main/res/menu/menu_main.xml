@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.everyonedj.server.MainActivity">
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/add_button"
+        android:title="@string/action_add"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/online_clients"
+        android:title="active clients"
+        app:showAsAction="ifRoom"/>
+</menu>

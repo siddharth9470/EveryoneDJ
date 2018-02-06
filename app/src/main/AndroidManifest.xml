@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.everyonedj" android:versionCode="2" android:versionName="EveryoneDJ">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".common.LoadingActivity"
+            android:label="@string/app_name"
+            android:noHistory="false"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".server.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".server.ServerActivity"
+            android:label="@string/title_activity_server"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".client.ClientActivity"
+            android:label="@string/title_activity_client"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".client.SongSendingActivity"
+            android:label="@string/title_activity_song_sending"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".server.ServerPlaylistSongs"
+            android:label="@string/title_activity_server_playlist_songs"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".server.ClientSongPlaylist"
+            android:label="@string/title_activity_client_song_playlist"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".server.AddSongsActivity"
+            android:label="@string/title_activity_add_songs"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.everyonedj.server.MainActivity" />
+        </activity>
+        <activity
+            android:name=".server.ConnectedClientsActivity"
+            android:label="@string/title_activity_connected_clients"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.everyonedj.server.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

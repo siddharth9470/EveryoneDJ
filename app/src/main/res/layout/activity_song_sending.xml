@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.everyonedj.client.SongSendingActivity"
+    >
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/toolbar"/>
+
+    <ListView
+        android:id="@+id/allSongsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_above="@+id/search_bar"
+        android:layout_below="@+id/app_bar"
+        android:background="#1d1d1d"
+        android:paddingLeft="2dp"
+        ></ListView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#010B12"
+        android:gravity="bottom">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchText"
+            android:layout_weight="1"
+            android:hint="Search your song"
+            android:singleLine="true"
+            android:fontFamily="sans-serif-thin"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/searchButton"
+            android:src="@android:drawable/ic_menu_search"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/transparent_layout"
+        android:background="#F2000000"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="invisible">
+
+        <com.everyonedj.common.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Sorry you can't send song"
+            android:visibility="invisible"
+            android:id="@+id/server_closed"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"/>
+
+        <com.everyonedj.common.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="server has closed"
+            android:id="@+id/server_closed2"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible"
+            android:textColor="#FFFFFF"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar2"
+            android:layout_gravity="center_horizontal"
+            android:indeterminate="false"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <com.everyonedj.common.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Please wait while we add"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+
+        <com.everyonedj.common.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="your song to the queue"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

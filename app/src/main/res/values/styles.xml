@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:actionBarStyle">@style/ActionBarThemeOverlay</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ActionBarThemeOverlay" parent="AppTheme">
+        <item name="android:background">#FC913A</item>
+        <item name="android:icon">@drawable/everyone_dj_logo</item>
+    </style>
+
+</resources>
